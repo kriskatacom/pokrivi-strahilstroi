@@ -1,0 +1,7 @@
+/node_modules
+/vendor
+/public/uploads
+/public/assets/css/min/tailwind.css
+/public/assets/js/min/jquery-3.6.0.min.js
+/public/assets/js/min/jquery-ui.min.js
+.env

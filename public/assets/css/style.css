@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+[x-cloak] {
+    display: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@theme {
+    --color-primary: #0b2935;
+
+    --breakpoint-xs: 480px;
+}

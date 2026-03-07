@@ -1,0 +1,13 @@
+{
+    "name": "my/php-mvc",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {},
+    "scripts": {
+        "setup-db": "php console.php db:setup",
+        "seed:users": "php console.php seed:users"
+    }
+}
