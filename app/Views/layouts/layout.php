@@ -18,9 +18,11 @@ use App\Core\View;
 
 <body class="antialiased text-gray-900 bg-gray-50 flex flex-col min-h-screen">
 
-    <?php View::loadPartial('partials/navbar'); ?>
+    <?php View::loadPartial('partials/navbar', [
+        'title' => $title ?? null
+    ]); ?>
 
-    <main id="main-content" class="flex-grow">
+    <main id="main-content" class="grow">
         <?= $content ?>
     </main>
 

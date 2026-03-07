@@ -2,4 +2,6 @@
 
 use App\Core\View;
 
-View::component('hero', 'index/home/components');
+View::component('hero', 'index/home/components', [
+    'title' => $title,
+]);
