@@ -6,8 +6,8 @@
 
             <div class="flex items-center space-x-2">
                 <i class="fa-solid fa-envelope opacity-80"></i>
-                <a href="mailto:office@strahlstroy.com" class="hover:text-red-100 transition duration-200 tracking-wide">
-                    office@strahlstroy.com
+                <a href="mailto:strahilstroi@abv.bg" class="hover:text-red-100 transition duration-200 tracking-wide">
+                    strahilstroi@abv.bg
                 </a>
             </div>
 
@@ -72,12 +72,12 @@
                     </div>
                 <?php endforeach; ?>
 
-                <a href="/kontakti" class="block text-center bg-primary hover:bg-transparent text-white hover:text-primary py-3 px-5 rounded-full font-black uppercase tracking-widest shadow-lg duration-300 border-2 border-primary">
+                <a href="/contacts" class="block text-center bg-primary hover:bg-transparent text-white hover:text-primary py-3 px-5 rounded-full font-black uppercase tracking-widest shadow-lg duration-300 border-2 border-primary">
                     Контакти
                 </a>
             </div>
 
-            <a href="/kontakti" class="hidden xs:block md:hidden text-center bg-primary hover:bg-transparent text-white hover:text-primary py-2 px-5 rounded-full uppercase tracking-widest shadow-lg duration-300 border-2 border-primary text-sm font-normal">
+            <a href="/contacts" class="hidden xs:block md:hidden text-center bg-primary hover:bg-transparent text-white hover:text-primary py-2 px-5 rounded-full uppercase tracking-widest shadow-lg duration-300 border-2 border-primary text-sm font-normal">
                 Контакти
             </a>
 
@@ -131,7 +131,7 @@
         </div>
 
         <div class="pt-6">
-            <a href="/kontakti" class="block w-full text-center bg-primary hover:bg-transparent text-white hover:text-primary py-4 rounded-xl font-black uppercase tracking-widest shadow-lg duration-300 border-2 border-primary">
+            <a href="/contacts" class="block w-full text-center bg-primary hover:bg-transparent text-white hover:text-primary py-4 rounded-xl font-black uppercase tracking-widest shadow-lg duration-300 border-2 border-primary">
                 <i class="fa-solid fa-phone-flip mr-2"></i> Контакти
             </a>
         </div>

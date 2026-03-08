@@ -55,11 +55,11 @@ $gallery_images = [
             <?php foreach ($gallery_images as $img): ?>
                 <div class="swiper-slide">
                     <a href="/assets/images/<?= $img ?>" data-fancybox="gallery" class="block group">
-                        <div class="relative aspect-video md:aspect-[16/10] overflow-hidden rounded-2xl shadow-2xl">
+                        <div class="relative aspect-video md:aspect-16/10 overflow-hidden rounded-2xl shadow-2xl">
                             <img src="/assets/images/<?= $img ?>" alt="Ремонт на покриви - Страхил Строй" 
                                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                             
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
+                            <div class="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-8">
                                 <div class="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
                                     <span class="bg-red-600 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-full">Увеличи снимката</span>
                                 </div>
@@ -75,9 +75,7 @@ $gallery_images = [
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        // Инициализация на Fancybox за Full Screen
         Fancybox.bind("[data-fancybox]", {
-            // Активира навигация с жестове и клавиатура
             dragToClose: true,
             Toolbar: {
                 display: {
@@ -86,11 +84,10 @@ $gallery_images = [
                 },
             },
             Images: {
-                initialSize: "fit", // Снимката се разпъва спрямо екрана
+                initialSize: "fit",
             }
         });
 
-        // Инициализация на Swiper
         const gallerySwiper = new Swiper('.gallerySwiper', {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -99,7 +96,6 @@ $gallery_images = [
                 delay: 5000,
                 disableOnInteraction: false,
             },
-            // Тези настройки предотвратяват "чупенето"
             observer: true,
             observeParents: true,
             watchSlidesProgress: true,
@@ -112,7 +108,6 @@ $gallery_images = [
                 el: '.gallery-pagination',
                 clickable: true,
             },
-            // Адаптивност
             breakpoints: {
                 640: { slidesPerView: 2 },
                 1024: { slidesPerView: 3 },

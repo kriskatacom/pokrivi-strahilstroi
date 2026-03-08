@@ -22,11 +22,11 @@
         </p>
 
         <div class="flex flex-wrap justify-center gap-4">
-            <a href="/kontakti" class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-xl font-black uppercase tracking-wide transition-all shadow-xl hover:shadow-primary/20 hover:-translate-y-1 flex items-center">
+            <a href="/contacts" class="bg-primary hover:bg-primary/90 text-white px-10 py-5 rounded-xl font-black uppercase tracking-wide transition-all shadow-xl hover:shadow-primary/20 hover:-translate-y-1 flex items-center">
                 <i class="fa-solid fa-phone-volume mr-3 text-xl"></i>
                 Безплатен оглед
             </a>
-            <a href="/oferti" class="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white hover:text-primary px-10 py-5 rounded-xl font-black uppercase tracking-wide transition-all shadow-xl">
+            <a href="/offers" class="bg-white/10 backdrop-blur-md text-white border border-white/20 hover:bg-white hover:text-primary px-10 py-5 rounded-xl font-black uppercase tracking-wide transition-all shadow-xl">
                 Виж цените ни
             </a>
         </div>

@@ -5,7 +5,191 @@ html {
 }
 
 @theme {
-    --color-primary: #A61708;
+    --color-primary: #a61708;
 
     --breakpoint-xs: 480px;
+}
+
+.article-intro {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Стил за банера с отстъпката */
+.promo-banner {
+    background: linear-gradient(90deg, #cc0000 0%, #ff0000 100%);
+    color: #ffffff;
+    padding: 15px 25px;
+    font-weight: 900;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(204, 0, 0, 0.3);
+    letter-spacing: 0.5px;
+    animation: pulse 2s infinite;
+}
+
+.promo-icon {
+    margin-right: 10px;
+}
+
+/* Стил за главното заглавие */
+.main-article-title {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    font-weight: 900;
+    line-height: 1.2;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    text-transform: none; /* За да запази естествения вид на изречението */
+}
+
+/* Декоративна линия под заглавието */
+.title-divider {
+    width: 80px;
+    height: 5px;
+    background-color: #cc0000;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* Анимация за привличане на вниманието върху отстъпката */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Адаптивност за мобилни устройства */
+@media (max-width: 768px) {
+    .main-article-title {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+    .promo-banner {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+        line-height: 1.4;
+    }
+}
+
+/* Дизайн на контейнера на статията */
+.article-content {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    line-height: 1.8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+}
+
+/* Главно заглавие */
+.article-content h1 {
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 800;
+    border-left: 8px solid #cc0000;
+    padding-left: 20px;
+}
+
+/* Подзаглавия */
+.article-content h2 {
+    font-size: 1.6rem;
+    color: #1a1a1a;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Параграфи */
+.article-content p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+/* Силни акценти */
+.article-content strong {
+    color: #000;
+    font-weight: 600;
+}
+
+/* Кутия с цени и важна информация */
+.info-box {
+    background-color: #fef2f2;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 35px 0;
+    border: 1px dashed #cc0000;
+}
+
+.info-box p {
+    margin-bottom: 0;
+    color: #b91c1c;
+    font-size: 1.15rem;
+}
+
+/* Списъци с процеса на работа */
+.article-content ul {
+    margin-bottom: 30px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.article-content li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.article-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #cc0000;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Линк за контакти */
+.article-content a {
+    color: #cc0000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.article-content a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Мобилна адаптация */
+@media (max-width: 768px) {
+    .article-content {
+        padding: 20px;
+        margin: 10px;
+    }
+    .article-content h1 {
+        font-size: 1.7rem;
+    }
+    .article-content p {
+        text-align: left;
+    }
 }

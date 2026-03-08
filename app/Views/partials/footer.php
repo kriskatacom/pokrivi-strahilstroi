@@ -21,7 +21,7 @@
             </div>
 
             <div class="space-y-4 text-center">
-                <h4 class="text-white text-xl font-black uppercase tracking-tight italic uppercase">
+                <h4 class="text-white text-xl font-black uppercase tracking-tight italic">
                     Работим в София и страната!
                 </h4>
                 <div class="flex flex-col items-center">
