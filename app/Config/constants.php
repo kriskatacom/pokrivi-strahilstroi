@@ -18,7 +18,7 @@ define('NAVBAR_ITEMS', [
             ['title' => 'Вътрешни ремонти', 'url' => '/vutreshni-remonti'],
         ]
     ],
-    ['title' => 'Цени', 'url' => '/tseni'],
+    ['title' => 'Цени', 'url' => '/oferti'],
     ['title' => 'Галерия', 'url' => '/galeriya'],
     ['title' => 'От клиенти', 'url' => '/otzyvi'],
 ]);
